@@ -5,11 +5,11 @@ angular.module('squares-front', ['ngAnimate', 'ngRoute', 'ngResource', 'meusServ
 
         $locationProvider.html5Mode(true);
 
-        $routeProvider.when('/fotos', {
+        $routeProvider.when('/dashboard', {
             templateUrl: 'partials/principal.html',
             controller: 'SquaresController'
         });
 
-        $routeProvider.otherwise({ redirectTo: '/fotos' });
+        $routeProvider.otherwise({ redirectTo: '/dashboard' });
 
     });

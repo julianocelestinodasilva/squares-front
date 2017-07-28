@@ -1,11 +1,11 @@
-angular.module('squares-front').controller('SquaresController', function($scope, recursoSquare) {
+angular.module('squares-front').controller('SquaresController', function($scope, recursoTerritory) {
 
-    $scope.fotos = [];
+    $scope.territories = [];
     $scope.filtro = '';
     $scope.mensagem = '';
 
-    recursoSquare.query(function(fotos) {
-        $scope.fotos = fotos;
+    recursoTerritory.query(function(territories) {
+        $scope.territories = territories;
     }, function(erro) {
         console.log(erro);
     });
