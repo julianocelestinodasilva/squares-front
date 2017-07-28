@@ -15,14 +15,20 @@
         <table class="table table-striped table table-hover" style="text-align: center;">
             <thead>
                 <tr>
-                    <th style="text-align: center;">Titulo</th>
-                    <th style="text-align: center;">Url</th>
+                    <th style="text-align: center;">Name</th>
+                    <th style="text-align: center;">Start</th>
+                    <th style="text-align: center;">End</th>
+                    <th style="text-align: center;">Area</th>
+                    <th style="text-align: center;">Painted Area</th>
                 </tr>
             </thead>
             <tbody>
                 <tr ng-repeat="territory in territories">
-                <td>{{territory.titulo}}</td>
-                <td>{{territory.url}}</td>
+                <td>{{territory.name}}</td>
+                <td>{{territory.start}}</td>
+                <td>{{territory.end}}</td>
+                <td>{{territory.area}}</td>
+                <td>{{territory.painted_area}}</td>
             </tr>
         </tbody>
     </table>
