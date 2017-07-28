@@ -7,7 +7,7 @@ angular.module('squares-front', ['minhasDiretivas', 'ngAnimate', 'ngRoute', 'ngR
 
         $routeProvider.when('/fotos', {
             templateUrl: 'partials/principal.html',
-            controller: 'FotosController'
+            controller: 'SquaresController'
         });
 
         $routeProvider.otherwise({ redirectTo: '/fotos' });
