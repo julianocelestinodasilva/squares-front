@@ -4,7 +4,7 @@ angular.module('squares-front').controller('SquaresController', function($scope,
     $scope.filtro = '';
     $scope.mensagem = '';
 
-    recursoTerritory.query(function(territories) {
+    recursoTerritory('mostPaintedArea').query(function(territories) {
         $scope.territories = territories;
     }, function(erro) {
         console.log(erro);
